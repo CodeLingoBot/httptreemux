@@ -11,7 +11,7 @@ type Group struct {
 	mux  *TreeMux
 }
 
-// Add a sub-group to this group
+// NewGroup adds a sub-group to this group
 func (g *Group) NewGroup(path string) *Group {
 	if len(path) < 1 {
 		panic("Group path must not be empty")
